@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const links = [
-  { id: 1, linkName: "Наборы" },
-  { id: 2, linkName: "Все товары" },
-  { id: 3, linkName: "Пошив" },
-  { id: 4, linkName: "Производство" },
-  { id: 5, linkName: "Информация" }
+  { id: 1, linkName: "Главная", to: "/" },
+  { id: 2, linkName: "Категории", to: "/category" },
+  { id: 3, linkName: "Все товары", to: "/allProducts" },
+  { id: 4, linkName: "Производство", to: "*" },
+  { id: 5, linkName: "Информация", to: "*" }
 ];
 
 export function Links() {
@@ -16,17 +17,20 @@ export function Links() {
       <div className="flex gap-[36px] items-center">
         {links.map((link) => (
           <div key={link.id} className="flex flex-col gap-[10px] items-center">
-            <button
+            <Link
+              to={link.to}
               className={`rounded-lg
                 ${
                   activeId === link.id
                     ? "bg-black text-white py-[29px] px-[44px]"
                     : "bg-transparent text-black"
                 }`}
-              onClick={() => setActiveId(link.id)}
+              onClick={() => {
+                setActiveId(link.id);
+              }}
             >
               {link.linkName}
-            </button>
+            </Link>
             {activeId === link.id && (
               <hr className="w-full rounded-[8px] h-[8px] bg-black" />
             )}

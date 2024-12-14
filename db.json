@@ -3,77 +3,89 @@
     {
       "id": "1",
       "categoryTitle": "Одежда",
-      "subCategories": [{}]
-    },
-    {
-      "id": "2",
-      "categoryTitle": "Сумки и аксессуары",
+      "img": "src/assets/img/category/sub/32446_big.jpg",
+      "to": "/allProducts",
       "subCategories": [
         {
           "id": "1",
-          "subCategoryTitle": "-Рюкзак"
+          "subCategoryTitle": "Шапки",
+          "to": "*",
+          "img": "src/assets/img/category/sub/shapki.jpg"
         },
         {
           "id": "2",
-          "subCategoryTitle": "-Сумка/Экосумка"
+          "to": "*",
+
+          "subCategoryTitle": "Худи",
+          "img": "src/assets/img/category/sub/32446_big.jpg"
         },
         {
           "id": "3",
-          "subCategoryTitle": "-Бананка"
+          "to": "*",
+
+          "subCategoryTitle": "Свитшоты",
+          "img": "src/assets/img/category/sub/images.jpeg"
         },
         {
           "id": "4",
-          "subCategoryTitle": "-Шапка"
+          "to": "*",
+
+          "subCategoryTitle": "Футболки",
+          "img": "src/assets/img/category/sub/images (1).jpeg"
         },
         {
           "id": "5",
-          "subCategoryTitle": "-Кепка"
+          "to": "*",
+
+          "subCategoryTitle": "Кепка",
+          "img": "src/assets/img/category/sub/images (7).jpeg"
         },
         {
           "id": "6",
-          "subCategoryTitle": "-Маска для сна"
-        },
-        {
-          "id": "7",
-          "subCategoryTitle": "-Защитная маска"
-        },
-        {
-          "id": "8",
-          "subCategoryTitle": "-Значки/Пины"
-        },
-        {
-          "id": "9",
-          "subCategoryTitle": "-Брелки"
-        },
-        {
-          "id": "10",
-          "subCategoryTitle": "-Обложка на паспорт/тревелкейс/кардхолдер"
+          "to": "*",
+
+          "subCategoryTitle": "Брюки",
+          "img": "src/assets/img/category/sub/6335212403.jpg"
         }
       ]
     },
     {
+      "id": "2",
+      "categoryTitle": "Сумки и аксессуары",
+      "to": "*",
+      "img": "src/assets/img/category/images (3).jpeg",
+      "subCategories": [{}]
+    },
+    {
       "id": "3",
       "categoryTitle": "Для офиса",
+      "img": "src/assets/img/category/Krasivye-lampovyj-nabor-mehanicheskaya-klaviatura-i-mysh-602x560.png",
+      "to": "*",
+
       "subCategories": [{}]
     },
     {
       "id": "4",
       "categoryTitle": "Посуда",
+      "img": "src/assets/img/category/145-5541.webp",
+      "to": "*",
+
       "subCategories": [{}]
     },
     {
       "id": "5",
       "categoryTitle": "Отдых",
+      "img": "src/assets/img/category/images (4).jpeg",
+      "to": "*",
+
       "subCategories": [{}]
     },
     {
       "id": "6",
       "categoryTitle": "Вкусности",
-      "subCategories": [{}]
-    },
-    {
-      "id": "7",
-      "categoryTitle": "Электроника",
+      "img": "src/assets/img/category/images (5).jpeg",
+      "to": "*",
+
       "subCategories": [{}]
     }
   ]

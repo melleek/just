@@ -1,52 +1,23 @@
-import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../../api/api";
-import { useEffect } from "react";
 import { Circle } from "../shared/ui/Circle";
 import { TiStarFullOutline } from "react-icons/ti";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { Button } from "../shared/ui/Button";
-
 import { SwiperCircle } from "../shared/ui/Swiper";
+import { CompanyLog } from "../shared/ui/CompanyLog";
+import { BgPurple } from "../shared/ui/BgPurple";
 
 export function Home() {
-  const dispatch = useDispatch();
-  const data = useSelector((store) => store.todos.todos);
-
-  useEffect(() => {
-    dispatch(getProducts());
-  }, [dispatch]);
-
-  console.log("=================DATA================");
-  console.log(data);
-  console.log("====================================");
-
   return (
-    <main className="">
-      <section className="flex bg-custom px-[161px] items-center">
-        <div className="flex flex-col gap-[60px]">
-          <h1 className="text-[48px] font-[900] leading-[1.2] tracking-[0.04px] flex flex-col gap-[20px]">
-            СВЕЖЕЕ ДЫХАНИЕ В КОРПОРАТИВНОЙ ЖИЗНИ
-            <p className="font-[400] text-[18px] leading-[1.5] tracking-[1px]">
-              Ми вдосконалили процес замовлення продукції для того, щоб Ви Ваша
-              компанія сконцентрувались на основних задачах досягали поставлених
-              цілей.
-            </p>
-          </h1>
-
-          <Circle />
-        </div>
-        <svg
-          className="absolute bottom-6 left-0 w-full bg-transparent"
-          viewBox="0 0 1000 50"
-          preserveAspectRatio="none"
-        >
-          <path d="M0,30 C250,0 750,50 1000,30 L1000,50 L0,50 Z" fill="#fff" />
-        </svg>
-
-        <img src="src/assets/img/preview 1.png" alt="Photo" />
-      </section>
-
-      <section className=" px-[161px] py-[60px] bg-img flex flex-col gap-[30px]">
+    <>
+      <BgPurple
+        children={<Circle />}
+        title="СВЕЖЕЕ ДЫХАНИЕ В КОРПОРАТИВНОЙ ЖИЗНИ"
+        desc="Ми вдосконалили процес замовлення продукції для того, щоб Ви Ваша
+            компанія сконцентрувались на основних задачах досягали поставлених
+            цілей."
+        img="src/assets/img/preview 1.png"
+      />
+      <section className=" px-[161px] py-[120px] bg-img flex flex-col gap-[30px]">
         <header className="flex justify-between items-center">
           <div>
             <h1 className="text-[48px] font-[700] flex items-start gap-[28px]">
@@ -140,9 +111,68 @@ export function Home() {
             короткие сроки, а так же у Вас всегда есть возможность
             кастомизировать изделия.
           </p>
+
           <SwiperCircle />
         </div>
       </section>
-    </main>
+
+      <section className="bg-img3 px-[161px] py-[270px] flex flex-col gap-[90px]">
+        <div className="flex gap-[150px]">
+          <div>
+            <h1 className="w-[520px] font-[700] text-[36px] flex flex-col gap-[20px]">
+              У вас своя уникальная идея по разработке мерча?
+              <p className="font-[400] text-[18px] tracking-[1.5px">
+                Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим
+                с технологией производства, предоставим образцы матералов.
+              </p>
+            </h1>
+          </div>
+          <div className="flex items-start gap-[120px]">
+            <img
+              src="src/assets/img/rocket 1 (1).png"
+              alt="rocket 1"
+              className="mt-[130px]"
+            />
+            <img src="src/assets/img/lamp.png" className="mt-[-120px]" />
+            <img
+              src="src/assets/img/rocket 2.png"
+              alt="rocket 2"
+              className="mt-[-140px]"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-[27px]">
+          <h1 className="text-[24px] font-[700] w-[520px]">
+            Введите свои контактные данные, и наш менеджер свяжется с Вами в
+            течении 1 часа
+          </h1>
+
+          <div className="flex justify-between items-center">
+            <input
+              type="text"
+              placeholder="Ваше Имя"
+              className="placeholder:text-[#454747] py-[5px] bg-transparent border-b-2 border-[#272525] w-[336px]"
+            />
+            <input
+              type="text"
+              placeholder="Ваша електронная почта"
+              className="placeholder:text-[#454747] py-[5px] bg-transparent border-b-2 w-[336px] border-[#272525]"
+            />
+            <input
+              type="text"
+              placeholder="Ваш номер телефона"
+              className="placeholder:text-[#454747] py-[5px] bg-transparent border-b-2 w-[336px] border-[#272525]"
+            />
+            <Button title="Заказать" className="bg-[#1FAB8A] px-[120px]" />
+          </div>
+        </div>
+      </section>
+
+      <section className="px-[161px] flex flex-col gap-[70px] pb-[120px]">
+        <h1 className="text-[48px] font-[700]">С нами соотрудничают</h1>
+        <CompanyLog />
+      </section>
+    </>
   );
 }

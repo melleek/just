@@ -22,7 +22,10 @@ export function Circle() {
   return (
     <div className="flex gap-[12px]">
       {circle.map((item) => (
-        <div key={item.id} className="w-[215px] flex flex-col items-center gap-[9px]">
+        <div
+          key={item.id}
+          className="w-[215px] flex flex-col items-center gap-[9px]"
+        >
           <img src={item.img} alt="" />
           <h1 className="text-center text-[22px]">
             {item.title} <span className="font-[700]">{item.desc}</span>

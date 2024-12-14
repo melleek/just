@@ -6,7 +6,6 @@
 @import "swiper/css/pagination";
 @import "swiper/css/navigation";
 
-
 @layer utilities {
   .bg-custom-gradient {
     background: linear-gradient(38.95deg, #cebdec -10.38%, #f1d8e9 90.56%);
@@ -25,6 +24,20 @@
 
   .bg-img2 {
     background-image: url("src/assets/img/Rectangle 88.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-img3 {
+    background-image: url("src/assets/img/bg (10).png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-bottom {
+    background-image: url("src/assets/img/Rectangle 20 (5).png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

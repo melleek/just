@@ -17,9 +17,14 @@ export function Navbar() {
       <Button title="+380 630 130 103" className="bg-[#1FAB8A]" />
       <div className="flex items-center gap-[40px] text-[18px]">
         <AiOutlineUser size={40} />
-        <p>
-          RU<span className="text-[#8E8E8E]"> /ENG</span>
-        </p>
+        <div className="bg-[#1FAB8A5C] p-[15px] rounded-[90px]">
+          <div className="bg-[#1FAB8A] p-[10px] rounded-[90px]">
+            <img src="src/assets/icons/shopping-basket.png" alt="" />
+            <span className="bg-[#fff] absolute mt-[-42px] ml-[25px] rounded-[90px] text-[12px] px-[5px] ">
+              0
+            </span>
+          </div>
+        </div>
       </div>
     </nav>
   );
