@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "categoryTitle": "Одежда",
+      "subCategories": [{}]
+    },
+    {
+      "id": "2",
+      "categoryTitle": "Сумки и аксессуары",
+      "subCategories": [
+        {
+          "id": "1",
+          "subCategoryTitle": "-Рюкзак"
+        },
+        {
+          "id": "2",
+          "subCategoryTitle": "-Сумка/Экосумка"
+        },
+        {
+          "id": "3",
+          "subCategoryTitle": "-Бананка"
+        },
+        {
+          "id": "4",
+          "subCategoryTitle": "-Шапка"
+        },
+        {
+          "id": "5",
+          "subCategoryTitle": "-Кепка"
+        },
+        {
+          "id": "6",
+          "subCategoryTitle": "-Маска для сна"
+        },
+        {
+          "id": "7",
+          "subCategoryTitle": "-Защитная маска"
+        },
+        {
+          "id": "8",
+          "subCategoryTitle": "-Значки/Пины"
+        },
+        {
+          "id": "9",
+          "subCategoryTitle": "-Брелки"
+        },
+        {
+          "id": "10",
+          "subCategoryTitle": "-Обложка на паспорт/тревелкейс/кардхолдер"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "categoryTitle": "Для офиса",
+      "subCategories": [{}]
+    },
+    {
+      "id": "4",
+      "categoryTitle": "Посуда",
+      "subCategories": [{}]
+    },
+    {
+      "id": "5",
+      "categoryTitle": "Отдых",
+      "subCategories": [{}]
+    },
+    {
+      "id": "6",
+      "categoryTitle": "Вкусности",
+      "subCategories": [{}]
+    },
+    {
+      "id": "7",
+      "categoryTitle": "Электроника",
+      "subCategories": [{}]
+    }
+  ]
+}
